@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\shubh\\source\\repos\\CompetitiveProgramming\\Geeksforgeeks\\CompetitiveProgramming.Geeksforgeeks.ArrayDemo\\CompetitiveProgramming.Geeksforgeeks.ArrayDemo.csproj",
-      "projectName": "CompetitiveProgramming.Geeksforgeeks.ArrayDemo",
-      "projectPath": "C:\\Users\\shubh\\source\\repos\\CompetitiveProgramming\\Geeksforgeeks\\CompetitiveProgramming.Geeksforgeeks.ArrayDemo\\CompetitiveProgramming.Geeksforgeeks.ArrayDemo.csproj",
+      "projectUniqueName": "C:\\Users\\shubh\\source\\repos\\CompetitiveProgramming\\CP.GeeksForGeeks.ArrayDemo\\CP.GeeksForGeeks.ArrayDemo.csproj",
+      "projectName": "CP.GeeksForGeeks.ArrayDemo",
+      "projectPath": "C:\\Users\\shubh\\source\\repos\\CompetitiveProgramming\\CP.GeeksForGeeks.ArrayDemo\\CP.GeeksForGeeks.ArrayDemo.csproj",
       "packagesPath": "C:\\Users\\shubh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\shubh\\source\\repos\\CompetitiveProgramming\\Geeksforgeeks\\CompetitiveProgramming.Geeksforgeeks.ArrayDemo\\obj\\",
+      "outputPath": "C:\\Users\\shubh\\source\\repos\\CompetitiveProgramming\\CP.GeeksForGeeks.ArrayDemo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

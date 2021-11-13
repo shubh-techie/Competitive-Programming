@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CompetitiveProgramming.Geeksforgeeks.ArrayDemo
+namespace CP.GeeksForGeeks.ArrayDemo
 {
     class Program
     {
