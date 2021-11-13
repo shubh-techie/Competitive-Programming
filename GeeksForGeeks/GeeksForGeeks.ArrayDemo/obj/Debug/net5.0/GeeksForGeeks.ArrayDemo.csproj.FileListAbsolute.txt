@@ -1,4 +1,0 @@
-C:\Users\shubh\source\repos\CompetitiveProgramming\GeeksForGeeks\GeeksForGeeks.ArrayDemo\obj\Debug\net5.0\GeeksForGeeks.ArrayDemo.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\shubh\source\repos\CompetitiveProgramming\GeeksForGeeks\GeeksForGeeks.ArrayDemo\obj\Debug\net5.0\GeeksForGeeks.ArrayDemo.AssemblyInfoInputs.cache
-C:\Users\shubh\source\repos\CompetitiveProgramming\GeeksForGeeks\GeeksForGeeks.ArrayDemo\obj\Debug\net5.0\GeeksForGeeks.ArrayDemo.AssemblyInfo.cs
-C:\Users\shubh\source\repos\CompetitiveProgramming\GeeksForGeeks\GeeksForGeeks.ArrayDemo\obj\Debug\net5.0\GeeksForGeeks.ArrayDemo.csproj.CoreCompileInputs.cache
