@@ -6,7 +6,9 @@ namespace GeeksForGeeks.ArrayDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            Console.WriteLine("Press press <enter> to exit from console.");
+            Console.ReadLine();
         }
     }
 }
