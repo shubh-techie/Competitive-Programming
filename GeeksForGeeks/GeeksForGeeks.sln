@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeeksForGeeks.ArrayDemo", "GeeksForGeeks.ArrayDemo\GeeksForGeeks.ArrayDemo.csproj", "{4FBA65E1-2830-4661-9ACC-6C86F3E5A0CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeeksForGeeks.Search", "Search\GeeksForGeeks.Search.csproj", "{899B42C1-946F-4476-BE1F-0A9C2ABD4F48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeeksForGeeks.Search", "GeeksForGeeks.Search\GeeksForGeeks.Search.csproj", "{10194267-82B0-4EEA-A7BE-0E8441F4BE62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{4FBA65E1-2830-4661-9ACC-6C86F3E5A0CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FBA65E1-2830-4661-9ACC-6C86F3E5A0CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FBA65E1-2830-4661-9ACC-6C86F3E5A0CE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{899B42C1-946F-4476-BE1F-0A9C2ABD4F48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{899B42C1-946F-4476-BE1F-0A9C2ABD4F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{899B42C1-946F-4476-BE1F-0A9C2ABD4F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{899B42C1-946F-4476-BE1F-0A9C2ABD4F48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10194267-82B0-4EEA-A7BE-0E8441F4BE62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10194267-82B0-4EEA-A7BE-0E8441F4BE62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10194267-82B0-4EEA-A7BE-0E8441F4BE62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10194267-82B0-4EEA-A7BE-0E8441F4BE62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

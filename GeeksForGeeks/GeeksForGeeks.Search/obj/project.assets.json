@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\shubh\\source\\repos\\CompetitiveProgramming\\GeeksForGeeks\\Search\\GeeksForGeeks.Search.csproj",
+      "projectUniqueName": "C:\\Users\\shubh\\source\\repos\\CompetitiveProgramming\\GeeksForGeeks\\GeeksForGeeks.Search\\GeeksForGeeks.Search.csproj",
       "projectName": "GeeksForGeeks.Search",
-      "projectPath": "C:\\Users\\shubh\\source\\repos\\CompetitiveProgramming\\GeeksForGeeks\\Search\\GeeksForGeeks.Search.csproj",
+      "projectPath": "C:\\Users\\shubh\\source\\repos\\CompetitiveProgramming\\GeeksForGeeks\\GeeksForGeeks.Search\\GeeksForGeeks.Search.csproj",
       "packagesPath": "C:\\Users\\shubh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\shubh\\source\\repos\\CompetitiveProgramming\\GeeksForGeeks\\Search\\obj\\",
+      "outputPath": "C:\\Users\\shubh\\source\\repos\\CompetitiveProgramming\\GeeksForGeeks\\GeeksForGeeks.Search\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

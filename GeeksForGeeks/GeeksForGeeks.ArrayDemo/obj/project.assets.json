@@ -17,8 +17,8 @@
   "libraries": {
     "GeeksForGeeks.Search/1.0.0": {
       "type": "project",
-      "path": "../Search/GeeksForGeeks.Search.csproj",
-      "msbuildProject": "../Search/GeeksForGeeks.Search.csproj"
+      "path": "../GeeksForGeeks.Search/GeeksForGeeks.Search.csproj",
+      "msbuildProject": "../GeeksForGeeks.Search/GeeksForGeeks.Search.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -58,8 +58,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\shubh\\source\\repos\\CompetitiveProgramming\\GeeksForGeeks\\Search\\GeeksForGeeks.Search.csproj": {
-              "projectPath": "C:\\Users\\shubh\\source\\repos\\CompetitiveProgramming\\GeeksForGeeks\\Search\\GeeksForGeeks.Search.csproj"
+            "C:\\Users\\shubh\\source\\repos\\CompetitiveProgramming\\GeeksForGeeks\\GeeksForGeeks.Search\\GeeksForGeeks.Search.csproj": {
+              "projectPath": "C:\\Users\\shubh\\source\\repos\\CompetitiveProgramming\\GeeksForGeeks\\GeeksForGeeks.Search\\GeeksForGeeks.Search.csproj"
             }
           }
         }
