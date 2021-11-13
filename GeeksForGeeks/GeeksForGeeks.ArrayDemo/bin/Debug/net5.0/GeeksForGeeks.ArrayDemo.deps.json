@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "GeeksForGeeks.ArrayDemo/1.0.0": {
+        "dependencies": {
+          "GeeksForGeeks.Search": "1.0.0"
+        },
+        "runtime": {
+          "GeeksForGeeks.ArrayDemo.dll": {}
+        }
+      },
+      "GeeksForGeeks.Search/1.0.0": {
+        "runtime": {
+          "GeeksForGeeks.Search.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GeeksForGeeks.ArrayDemo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GeeksForGeeks.Search/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
