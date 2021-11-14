@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeeksForGeeks.ArrayDemo", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeeksForGeeks.Search", "GeeksForGeeks.Search\GeeksForGeeks.Search.csproj", "{10194267-82B0-4EEA-A7BE-0E8441F4BE62}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeeksForGeeks.TimeSpaceComplexityAnalysis", "GeeksForGeeks.TimeSpaceComplexityAnalysis\GeeksForGeeks.TimeSpaceComplexityAnalysis.csproj", "{266AC09B-8FA5-4980-9684-F6796687E53F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{10194267-82B0-4EEA-A7BE-0E8441F4BE62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10194267-82B0-4EEA-A7BE-0E8441F4BE62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10194267-82B0-4EEA-A7BE-0E8441F4BE62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{266AC09B-8FA5-4980-9684-F6796687E53F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{266AC09B-8FA5-4980-9684-F6796687E53F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{266AC09B-8FA5-4980-9684-F6796687E53F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{266AC09B-8FA5-4980-9684-F6796687E53F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

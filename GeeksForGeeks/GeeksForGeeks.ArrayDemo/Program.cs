@@ -1,4 +1,5 @@
 ﻿using GeeksForGeeks.Search;
+using GeeksForGeeks.TimeSpaceComplexityAnalysis;
 using System;
 
 namespace GeeksForGeeks.ArrayDemo
@@ -7,7 +8,9 @@ namespace GeeksForGeeks.ArrayDemo
     {
         static void Main(string[] args)
         {
-            SearchMain searchMain = new SearchMain();
+
+            TimeSpaceComplexity timeSpaceComplexityAnalysis = new TimeSpaceComplexity();
+            //SearchMain searchMain = new SearchMain();
             Console.WriteLine("Press press <enter> to exit from console.");
             Console.ReadLine();
         }
