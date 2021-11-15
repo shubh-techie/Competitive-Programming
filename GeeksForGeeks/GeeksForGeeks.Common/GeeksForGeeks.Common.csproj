@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GeeksForGeeks.BitMagic\GeeksForGeeks.BitMagic.csproj" />
+    <ProjectReference Include="..\GeeksForGeeks.Mathematics\GeeksForGeeks.Mathematics.csproj" />
+    <ProjectReference Include="..\GeeksForGeeks.Recursion\GeeksForGeeks.Recursion.csproj" />
+    <ProjectReference Include="..\GeeksForGeeks.Search\GeeksForGeeks.Search.csproj" />
+  </ItemGroup>
+
+</Project>
