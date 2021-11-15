@@ -1,11 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <TargetFramework>net5.0</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GeeksForGeeks.Hashing\GeeksForGeeks.Hashing.csproj" />
     <ProjectReference Include="..\GeeksForGeeks.Search\GeeksForGeeks.Search.csproj" />
     <ProjectReference Include="..\GeeksForGeeks.TimeSpaceComplexityAnalysis\GeeksForGeeks.TimeSpaceComplexityAnalysis.csproj" />
   </ItemGroup>

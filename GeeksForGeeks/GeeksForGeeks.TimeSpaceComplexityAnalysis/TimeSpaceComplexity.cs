@@ -13,7 +13,7 @@ namespace GeeksForGeeks.TimeSpaceComplexityAnalysis
             Console.WriteLine("TimeSpaceComplexityAnalysis learning is ende");
         }
 
-        private void CheckComplexity()
+        private void CheckComplexity1()
         {
             int n = 5, k = 10;
 
@@ -23,6 +23,22 @@ namespace GeeksForGeeks.TimeSpaceComplexityAnalysis
                 {
                     Console.Write(i + j + " ");
                 }
+                Console.WriteLine();
+            }
+        }
+
+        private void CheckComplexity()
+        {
+            int n = 10;
+            while (n > 0)
+            {
+                int j = n;
+                while (j > 1)
+                {
+                    j -= 1;
+                    Console.Write("J "+ " ");
+                }
+                n /= 2;
                 Console.WriteLine();
             }
         }
