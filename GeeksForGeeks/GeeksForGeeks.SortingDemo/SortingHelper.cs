@@ -7,7 +7,8 @@ namespace GeeksForGeeks.SortingDemo
         public SortingHelper()
         {
             Console.WriteLine("SortingHelper learning is start");
-
+            new QuickSorting();
+            //new MergeSorting();
             //SelectionSortingDemo();
             //BubbleSortingDemo();
             //InsertionSortDemo();
@@ -17,12 +18,10 @@ namespace GeeksForGeeks.SortingDemo
         private void InsertionSortDemo()
         {
             int[] arr = { 185, 165, 150, 170, 145 };
-            int size = arr.Length;
-            int temp = arr[1];
             for (int i = 1; i < arr.Length; i++)
             {
                 int j = i;
-                temp = arr[i];
+                int temp = arr[i];
                 while (j > 0 && arr[j - 1] > temp)
                 {
                     arr[j] = arr[j - 1];
