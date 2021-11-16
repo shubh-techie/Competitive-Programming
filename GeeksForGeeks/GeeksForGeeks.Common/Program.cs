@@ -2,6 +2,7 @@
 using GeeksForGeeks.Mathematics;
 using GeeksForGeeks.Recursion;
 using GeeksForGeeks.Search;
+using GeeksForGeeks.SortingDemo;
 using System;
 
 namespace GeeksForGeeks.Common
@@ -15,9 +16,12 @@ namespace GeeksForGeeks.Common
             // RecursionHelper recursionHelper = new RecursionHelper();
             // HashingHelper hashingHelper = new HashingHelper();
             // TimeSpaceComplexity timeSpaceComplexityAnalysis = new TimeSpaceComplexity();
-            SearchMain searchMain = new SearchMain();
+            //SearchMain searchMain = new SearchMain();
+            SortingHelper sortingHelper = new SortingHelper();
             Console.WriteLine("Press press <enter> to exit from console.");
             Console.ReadLine();
         }
     }
 }
+
+
