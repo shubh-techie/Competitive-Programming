@@ -24,18 +24,13 @@ namespace GeeksForGeeks.Search
 
         private int BinearySearch(int[] arr, int key)
         {
-            int leftIndex = 0, rightIndex = arr.Length - 1, midIndex = 0;
+            int leftIndex = 0, rightIndex = arr.Length - 1, midIndex;
             while (leftIndex <= rightIndex)
             {
-                midIndex = (leftIndex + rightIndex) / 2;
-                if (key < arr[midIndex])
-                {
-                    rightIndex = midIndex;
-                }
-                else
-                {
-                    leftIndex = midIndex;
-                }
+                midIndex = leftIndex + (rightIndex - leftIndex) / 2;
+                if (arr[midIndex] == key) return midIndex;
+                else if (key < arr[midIndex]) rightIndex = midIndex - 1;
+                else leftIndex = midIndex + 1;
             }
             throw new Exception("Number is not present in this array.");
         }

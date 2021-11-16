@@ -10,6 +10,7 @@
     <ProjectReference Include="..\GeeksForGeeks.Mathematics\GeeksForGeeks.Mathematics.csproj" />
     <ProjectReference Include="..\GeeksForGeeks.Recursion\GeeksForGeeks.Recursion.csproj" />
     <ProjectReference Include="..\GeeksForGeeks.Search\GeeksForGeeks.Search.csproj" />
+    <ProjectReference Include="..\GeeksForGeeks.SortingDemo\GeeksForGeeks.SortingDemo.csproj" />
   </ItemGroup>
 
 </Project>
