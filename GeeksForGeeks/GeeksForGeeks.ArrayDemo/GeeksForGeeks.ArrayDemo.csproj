@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GeeksForGeeks.Hashing\GeeksForGeeks.Hashing.csproj" />
     <ProjectReference Include="..\GeeksForGeeks.Search\GeeksForGeeks.Search.csproj" />
     <ProjectReference Include="..\GeeksForGeeks.TimeSpaceComplexityAnalysis\GeeksForGeeks.TimeSpaceComplexityAnalysis.csproj" />
   </ItemGroup>

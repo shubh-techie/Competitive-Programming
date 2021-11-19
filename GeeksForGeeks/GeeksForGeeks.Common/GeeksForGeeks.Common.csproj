@@ -8,9 +8,11 @@
   <ItemGroup>
     <ProjectReference Include="..\GeeksForGeeks.BitMagic\GeeksForGeeks.BitMagic.csproj" />
     <ProjectReference Include="..\GeeksForGeeks.Mathematics\GeeksForGeeks.Mathematics.csproj" />
+    <ProjectReference Include="..\GeeksForGeeks.QueueDemo\GeeksForGeeks.QueueDemo.csproj" />
     <ProjectReference Include="..\GeeksForGeeks.Recursion\GeeksForGeeks.Recursion.csproj" />
     <ProjectReference Include="..\GeeksForGeeks.Search\GeeksForGeeks.Search.csproj" />
     <ProjectReference Include="..\GeeksForGeeks.SortingDemo\GeeksForGeeks.SortingDemo.csproj" />
+    <ProjectReference Include="..\GeeksForGeeks.StackDemo\GeeksForGeeks.StackDemo.csproj" />
   </ItemGroup>
 
 </Project>
