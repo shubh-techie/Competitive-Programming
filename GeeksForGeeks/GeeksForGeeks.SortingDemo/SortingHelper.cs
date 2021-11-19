@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace GeeksForGeeks.SortingDemo
 {
@@ -7,72 +8,57 @@ namespace GeeksForGeeks.SortingDemo
         public SortingHelper()
         {
             Console.WriteLine("SortingHelper learning is start");
+            //UnionOfTwoSortedArray();
             new QuickSorting();
-            //new MergeSorting();
-            //SelectionSortingDemo();
-            //BubbleSortingDemo();
-            //InsertionSortDemo();
             Console.WriteLine("SortingHelper learning is ende");
         }
-
-        private void InsertionSortDemo()
+        /// <summary>
+        /// Method to find out union of two sorted array.
+        /// </summary>
+        private void UnionOfTwoSortedArray()
         {
-            int[] arr = { 185, 165, 150, 170, 145 };
-            for (int i = 1; i < arr.Length; i++)
-            {
-                int j = i;
-                int temp = arr[i];
-                while (j > 0 && arr[j - 1] > temp)
-                {
-                    arr[j] = arr[j - 1];
-                    j--;
-                }
-                arr[j] = temp;
-            }
+            int[] arr1 = { 2, 10, 20, 20 };
+            int[] arr2 = { 3, 20, 40 };
+            int[] unionArray = GetUnionArray(arr1, arr2);
+            Console.WriteLine("After union :" + string.Join(" ,", unionArray));
         }
 
-        private void BubbleSortingDemo()
+        private int[] GetUnionArray(int[] arr1, int[] arr2)
         {
-            int[] heights = { 185, 165, 150, 170, 145 };
-            int size = heights.Length;
-            for (int i = 0; i < size - 1; i++)
+            int m = arr1.Length, n = arr2.Length;
+            List<int> temp = new List<int>();
+            int i = 0, j = 0, k = 0;
+            while (i < m && j < n)
             {
-                for (int j = 0; j < size - 1 - i; j++)
+                if (i > 0 && arr1[i - 1] == arr1[i])
                 {
-                    if (heights[j] > heights[j + 1])
-                    {
-                        SwapArray(heights, j, j + 1);
-                    }
+                    i++;
+                    continue;
+                }
+                if (j > 0 && arr2[j - 1] == arr2[j])
+                {
+                    j++;
+                    continue;
+                }
+                if (arr1[i] < arr2[j])
+                {
+                    temp.Add(arr1[i]);
+                    i++;
+                    k++;
+                }
+                else if (arr2[j] < arr1[i])
+                {
+                    temp.Add(arr2[j]);
+                    j++;
+                    k++;
+                }
+                else
+                {
+                    temp.Add(arr2[j]);
+                    i++; j++; k++;
                 }
             }
-            Console.WriteLine("After sorting ... : " + string.Join(", ", heights));
-        }
-
-        private void SelectionSortingDemo()
-        {
-            int[] heights = { 185, 165, 150, 170, 145 };
-            int size = heights.Length;
-            bool isSwap;
-            for (int i = 0; i < size - 1; i++)
-            {
-                isSwap = false;
-                for (int j = i; j < size; j++)
-                {
-                    if (heights[i] > heights[j])
-                    {
-                        SwapArray(heights, i, j);
-                        isSwap = true;
-                    }
-                }
-                if (!isSwap) break;
-            }
-        }
-
-        private void SwapArray(int[] heights, int i, int j)
-        {
-            int temp = heights[i];
-            heights[i] = heights[j];
-            heights[j] = temp;
+            return temp.ToArray();
         }
     }
 }

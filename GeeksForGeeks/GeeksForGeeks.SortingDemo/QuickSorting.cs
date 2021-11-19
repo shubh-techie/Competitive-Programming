@@ -23,7 +23,7 @@ namespace GeeksForGeeks.SortingDemo
         {
             if (left < right)
             {
-                int pIndex = GetPivotNumber(arr, left, right);
+                int pIndex = GetPivotFromHoare(arr, left, right);
                 QuickSort(arr, left, pIndex - 1);
                 QuickSort(arr, pIndex + 1, right);
             }
@@ -41,6 +41,25 @@ namespace GeeksForGeeks.SortingDemo
                 }
             }
             return pIndex;
+        }
+
+        private int GetPivotFromHoare(int[] arr, int left, int right)
+        {
+            int i = left - 1, j = right + 1, pNo = arr[left];
+            while (true)
+            {
+                do
+                {
+                    i++;
+                } while (arr[i] < pNo);
+                do
+                {
+                    j--;
+                } while (arr[j] > pNo);
+
+                if (i >= j) return j;
+                Swapping(arr, i, j);
+            }
         }
 
         private void Swapping(int[] arr, int i, int j)
