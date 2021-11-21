@@ -13,6 +13,7 @@
     <ProjectReference Include="..\GeeksForGeeks.Search\GeeksForGeeks.Search.csproj" />
     <ProjectReference Include="..\GeeksForGeeks.SortingDemo\GeeksForGeeks.SortingDemo.csproj" />
     <ProjectReference Include="..\GeeksForGeeks.StackDemo\GeeksForGeeks.StackDemo.csproj" />
+    <ProjectReference Include="..\MatrixDemo\GeeksForGeeks.MatrixDemo.csproj" />
   </ItemGroup>
 
 </Project>

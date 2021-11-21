@@ -1,7 +1,4 @@
-﻿using GeeksForGeeks.Hashing;
-using GeeksForGeeks.Search;
-using GeeksForGeeks.TimeSpaceComplexityAnalysis;
-using System;
+﻿using System;
 
 namespace GeeksForGeeks.ArrayDemo
 {
