@@ -1,14 +1,7 @@
-﻿using GeeksForGeeks.BitMagic;
-using GeeksForGeeks.Mathematics;
-using GeeksForGeeks.MatrixDemo;
-using GeeksForGeeks.QueueDemo;
-using GeeksForGeeks.Recursion;
-using GeeksForGeeks.Search;
-using GeeksForGeeks.SortingDemo;
-using GeeksForGeeks.StackDemo;
+﻿using GeeksForGeeks.MatrixDemo;
 using System;
 
-namespace GeeksForGeeks.Common
+namespace GeeksForGeeks.StartUp
 {
     class Program
     {
