@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeeksForGeeks.QueueDemo", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeeksForGeeks.HashingDemo", "GeeksForGeeks.HashingDemo\GeeksForGeeks.HashingDemo.csproj", "{31CC89A8-B494-416A-BC58-B617C8B40DEF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeeksForGeeks.MatrixDemo", "MatrixDemo\GeeksForGeeks.MatrixDemo.csproj", "{505059C3-042C-462E-8D7E-66CDC8BF2DFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{31CC89A8-B494-416A-BC58-B617C8B40DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31CC89A8-B494-416A-BC58-B617C8B40DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31CC89A8-B494-416A-BC58-B617C8B40DEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{505059C3-042C-462E-8D7E-66CDC8BF2DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{505059C3-042C-462E-8D7E-66CDC8BF2DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{505059C3-042C-462E-8D7E-66CDC8BF2DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{505059C3-042C-462E-8D7E-66CDC8BF2DFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

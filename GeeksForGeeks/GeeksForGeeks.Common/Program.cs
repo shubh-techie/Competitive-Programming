@@ -1,5 +1,6 @@
 ﻿using GeeksForGeeks.BitMagic;
 using GeeksForGeeks.Mathematics;
+using GeeksForGeeks.MatrixDemo;
 using GeeksForGeeks.QueueDemo;
 using GeeksForGeeks.Recursion;
 using GeeksForGeeks.Search;
@@ -22,6 +23,7 @@ namespace GeeksForGeeks.Common
             // SortingHelper sortingHelper = new SortingHelper();
             //StackHelper stackHelper = new StackHelper();
             //QueueHelper queueHelper = new QueueHelper();
+            MatrixHelper matrixHelper = new MatrixHelper();
             Console.WriteLine("Press press <enter> to exit from console.");
             Console.ReadLine();
         }
