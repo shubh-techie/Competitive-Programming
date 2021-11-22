@@ -1,4 +1,5 @@
 ﻿using GeeksForGeeks.MatrixDemo;
+using GeeksForGeeks.StringDemo;
 using System;
 
 namespace GeeksForGeeks.StartUp
@@ -16,7 +17,8 @@ namespace GeeksForGeeks.StartUp
             // SortingHelper sortingHelper = new SortingHelper();
             //StackHelper stackHelper = new StackHelper();
             //QueueHelper queueHelper = new QueueHelper();
-            MatrixHelper matrixHelper = new MatrixHelper();
+            //MatrixHelper matrixHelper = new MatrixHelper();
+            StringHelper stringHelper = new StringHelper();
             Console.WriteLine("Press press <enter> to exit from console.");
             Console.ReadLine();
         }
