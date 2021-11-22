@@ -10,6 +10,9 @@ namespace GeeksForGeeks.Search
     {
         public StringFirst()
         {
+            SearchAnagramInString();
+            //SearchAString();
+            //ReverseAStringDemo();
             //LeftmostNotRepeatingCharacter();
             //LeftmostRepeatingCharacter();
             //AnagramDemo();
@@ -18,6 +21,149 @@ namespace GeeksForGeeks.Search
             //PalindromeChecking();
             //StringDemoFunction();
             //ASCIIDemo();
+        }
+        private void SearchAnagramInString()
+        {
+            string text = "geeksforgeeksfrogfrog";
+            string pattern = "frog";
+            Console.WriteLine(IsAnagramFound(text, pattern));
+
+        }
+
+        private bool IsAnagramFound(string text, string pattern)
+        {
+            if (text == null || pattern == null) return false;
+            if (text == "" && pattern == "") return true;
+            int textLength = text.Length, pLength = pattern.Length;
+            if (pLength > textLength) return false;
+
+            int[] textTable = new int[256];
+            int[] patternTable = new int[256];
+
+            for (int pIndex = 0; pIndex < pLength; pIndex++)
+            {
+                textTable[text[pIndex]]++;
+                patternTable[pattern[pIndex]]++;
+            }
+
+            for (int index = pLength; index < textLength - pLength + 1; index++)
+            {
+                if (TableSame(textTable, patternTable))
+                    return true;
+
+                textTable[text[index]]++;
+                textTable[text[index - pLength]]--;
+            }
+            return false;
+        }
+
+        private bool TableSame(int[] textTable, int[] patternTable)
+        {
+            for (int i = 0; i < 256; i++)
+            {
+                if (textTable[i] != patternTable[i])
+                    return false;
+            }
+            return true;
+        }
+
+        private void SearchAnagramInString1()
+        {
+            string text = "geeksforgeeksfrogfrog";
+            string pattern = "frog";
+            int m = text.Length, n = pattern.Length;
+            for (int i = 0; i < m - n + 1; i++)
+            {
+                if (IsCheckAnagram(pattern, text.Substring(i, n)))
+                {
+                    Console.WriteLine($"Yes its anagram, index is :{i}");
+                }
+            }
+            Console.WriteLine("No Anagram");
+        }
+
+        private bool IsCheckAnagram(string str1, string str2)
+        {
+            int[] table = new int[256];
+            for (int i = 0; i < str2.Length; i++)
+            {
+                table[str1[i]]++;
+                table[str2[i]]--;
+            }
+            foreach (var item in table)
+            {
+                if (item != 0) return false;
+            }
+            return true;
+        }
+        private void SearchAString()
+        {
+            string text = "ABABABCD";
+            string pattern = "ABAB";
+            int textLength = text.Length, pLength = pattern.Length;
+            for (int i = 0; i < textLength - pLength + 1; i++)
+            {
+                int pIndex;
+                for (pIndex = 0; pIndex < pLength; pIndex++)
+                {
+                    if (text[i + pIndex] != pattern[pIndex]) break;
+                }
+                if (pIndex == pLength)
+                    Console.WriteLine(i);
+            }
+        }
+
+        private void ReverseAStringDemo()
+        {
+            string str = "i.like.this.program.very.much";
+            ReverseASting(str.ToCharArray());
+        }
+
+        private void ReverseASting(char[] str)
+        {
+            int start = 0;
+            for (int end = 0; end < str.Length; end++)
+            {
+                if (str[end] == '.')
+                {
+                    Reverse(str, start, end - 1);
+                    start = end + 1;
+                }
+            }
+            Reverse(str, start, str.Length - 1);
+            Reverse(str, 0, str.Length - 1);
+            Console.WriteLine(string.Join("", str));
+        }
+
+        private void Reverse(char[] str, int start, int end)
+        {
+            while (start <= end)
+            {
+                char temp = str[start];
+                str[start] = str[end];
+                str[end] = temp;
+                start++;
+                end--;
+            }
+        }
+
+        private void ReverseAStingWithStack(string str)
+        {
+            Console.WriteLine(str);
+            Stack<string> stack = new Stack<string>();
+
+            foreach (var item in str.Split(' '))
+            {
+                stack.Push(item);
+            }
+
+            StringBuilder sb = new StringBuilder();
+            foreach (var item in stack)
+            {
+                sb.Append(item + " ");
+            }
+
+            Console.WriteLine(sb.ToString().TrimEnd());
         }
 
         private void LeftmostNotRepeatingCharacter()
