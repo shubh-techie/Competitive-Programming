@@ -10,7 +10,8 @@ namespace GeeksForGeeks.Search
     {
         public StringFirst()
         {
-            SearchAnagramInString();
+            ReverseDemoCheck();
+            //SearchAnagramInString();
             //SearchAString();
             //ReverseAStringDemo();
             //LeftmostNotRepeatingCharacter();
@@ -22,6 +23,39 @@ namespace GeeksForGeeks.Search
             //StringDemoFunction();
             //ASCIIDemo();
         }
+
+        private void ReverseDemoCheck()
+        {
+            char[] arr = { 'A', 'B', 'C', 'D' };
+            Console.WriteLine(string.Join(" ", arr));
+            ReverseStringRecursion(arr, 0, arr.Length - 1);
+            Console.WriteLine(string.Join(" ", arr));
+        }
+
+        private void ReverseStringRecursion(char[] s, int left, int right)
+        {
+            if (left > right)
+            {
+                return;
+            }
+            char temp = s[left];
+            s[left] = s[right];
+            s[right] = temp;
+            ReverseStringRecursion(s, left + 1, right - 1);
+        }
+
+        public void ReverseString(char[] s)
+        {
+            if (s == null || s.Length == 0) return;
+            int left = 0, right = s.Length - 1;
+            while (left <= right)
+            {
+                char temp = s[left];
+                s[left] = s[right];
+                s[right] = temp;
+            }
+        }
+
         private void SearchAnagramInString()
         {
             string text = "geeksforgeeksfrogfrog";
