@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GeeksForGeeks.ArrayDemo\GeeksForGeeks.ArrayDemo.csproj" />
     <ProjectReference Include="..\GeeksForGeeks.StringDemo\GeeksForGeeks.StringDemo.csproj" />
     <ProjectReference Include="..\MatrixDemo\GeeksForGeeks.MatrixDemo.csproj" />
   </ItemGroup>
