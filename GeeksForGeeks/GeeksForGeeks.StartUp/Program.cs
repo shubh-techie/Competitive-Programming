@@ -1,6 +1,4 @@
-﻿using GeeksForGeeks.ArrayDemo;
-using GeeksForGeeks.MatrixDemo;
-using GeeksForGeeks.StringDemo;
+﻿using GeeksForGeeks.HashingDemo;
 using System;
 
 namespace GeeksForGeeks.StartUp
@@ -9,11 +7,11 @@ namespace GeeksForGeeks.StartUp
     {
         static void Main(string[] args)
         {
-            ArrayDemoHelper arrayDemoHelper = new ArrayDemoHelper();
+            // ArrayDemoHelper arrayDemoHelper = new ArrayDemoHelper();
             // BitMagicHelper bitMagicHelper = new BitMagicHelper();
             // MathematicsHelper mathematicsHelper = new MathematicsHelper();
             // RecursionHelper recursionHelper = new RecursionHelper();
-            // HashingHelper hashingHelper = new HashingHelper();
+            HashingHelper hashingHelper = new();
             // TimeSpaceComplexity timeSpaceComplexityAnalysis = new TimeSpaceComplexity();
             // SearchMain searchMain = new SearchMain();
             // SortingHelper sortingHelper = new SortingHelper();
