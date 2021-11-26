@@ -1,4 +1,5 @@
 ﻿using GeeksForGeeks.HashingDemo;
+using GeeksForGeeks.LinkListDemo;
 using System;
 
 namespace GeeksForGeeks.StartUp
@@ -7,11 +8,12 @@ namespace GeeksForGeeks.StartUp
     {
         static void Main(string[] args)
         {
+            _ = new LinkListHelper();
             // ArrayDemoHelper arrayDemoHelper = new ArrayDemoHelper();
             // BitMagicHelper bitMagicHelper = new BitMagicHelper();
             // MathematicsHelper mathematicsHelper = new MathematicsHelper();
             // RecursionHelper recursionHelper = new RecursionHelper();
-            HashingHelper hashingHelper = new();
+            //HashingHelper hashingHelper = new();
             // TimeSpaceComplexity timeSpaceComplexityAnalysis = new TimeSpaceComplexity();
             // SearchMain searchMain = new SearchMain();
             // SortingHelper sortingHelper = new SortingHelper();
