@@ -36,7 +36,7 @@ namespace GeeksForGeeks.TimeSpaceComplexityAnalysis
                 while (j > 1)
                 {
                     j -= 1;
-                    Console.Write("J "+ " ");
+                    Console.Write("J " + " ");
                 }
                 n /= 2;
                 Console.WriteLine();

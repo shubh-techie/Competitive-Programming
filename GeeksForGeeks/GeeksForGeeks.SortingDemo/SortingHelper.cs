@@ -9,7 +9,8 @@ namespace GeeksForGeeks.SortingDemo
         {
             Console.WriteLine("SortingHelper learning is start");
             //UnionOfTwoSortedArray();
-            new QuickSorting();
+            //new QuickSorting();
+            _ = new SolvingProblems();
             Console.WriteLine("SortingHelper learning is ende");
         }
         /// <summary>
