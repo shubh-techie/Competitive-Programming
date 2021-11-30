@@ -3,6 +3,7 @@ using GeeksForGeeks.HashingDemo;
 using GeeksForGeeks.LinkListDemo;
 using GeeksForGeeks.Search;
 using GeeksForGeeks.SortingDemo;
+using GeeksForGeeks.TreeDemo;
 using System;
 
 namespace GeeksForGeeks.StartUp
@@ -19,7 +20,8 @@ namespace GeeksForGeeks.StartUp
             //HashingHelper hashingHelper = new();
             // TimeSpaceComplexity timeSpaceComplexityAnalysis = new TimeSpaceComplexity();
             //_ = new SearchMain();
-            _ = new SortingHelper();
+            //_ = new SortingHelper();
+            _ = new TreeDemoHelper();
             // StackHelper stackHelper = new StackHelper();
             // QueueHelper queueHelper = new QueueHelper();
             // MatrixHelper matrixHelper = new MatrixHelper();

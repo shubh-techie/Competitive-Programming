@@ -11,6 +11,7 @@
     <ProjectReference Include="..\GeeksForGeeks.LinkListDemo\GeeksForGeeks.LinkListDemo.csproj" />
     <ProjectReference Include="..\GeeksForGeeks.SortingDemo\GeeksForGeeks.SortingDemo.csproj" />
     <ProjectReference Include="..\GeeksForGeeks.StringDemo\GeeksForGeeks.StringDemo.csproj" />
+    <ProjectReference Include="..\GeeksForGeeks.TreeDemo\GeeksForGeeks.TreeDemo.csproj" />
     <ProjectReference Include="..\MatrixDemo\GeeksForGeeks.MatrixDemo.csproj" />
   </ItemGroup>
 
