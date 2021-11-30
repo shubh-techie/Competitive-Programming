@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace GeeksForGeeks.LinkListDemo
+﻿namespace GeeksForGeeks.LinkListDemo
 {
     public class LinkListHelper
     {

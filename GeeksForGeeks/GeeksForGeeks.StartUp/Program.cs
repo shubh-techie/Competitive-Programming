@@ -1,9 +1,4 @@
-﻿using GeeksForGeeks.ArrayDemo;
-using GeeksForGeeks.HashingDemo;
-using GeeksForGeeks.LinkListDemo;
-using GeeksForGeeks.Search;
-using GeeksForGeeks.SortingDemo;
-using GeeksForGeeks.TreeDemo;
+﻿using GeeksForGeeks.TreeDemo;
 using System;
 
 namespace GeeksForGeeks.StartUp
