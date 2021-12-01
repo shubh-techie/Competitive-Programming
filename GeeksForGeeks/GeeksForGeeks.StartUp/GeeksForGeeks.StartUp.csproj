@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GeeksForGeeks.ArrayDemo\GeeksForGeeks.ArrayDemo.csproj" />
+    <ProjectReference Include="..\GeeksForGeeks.BackTracking\GeeksForGeeks.BackTracking.csproj" />
     <ProjectReference Include="..\GeeksForGeeks.HashingDemo\GeeksForGeeks.HashingDemo.csproj" />
     <ProjectReference Include="..\GeeksForGeeks.LinkListDemo\GeeksForGeeks.LinkListDemo.csproj" />
     <ProjectReference Include="..\GeeksForGeeks.SortingDemo\GeeksForGeeks.SortingDemo.csproj" />

@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeeksForGeeks.StringDemo", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeeksForGeeks.LinkListDemo", "GeeksForGeeks.LinkListDemo\GeeksForGeeks.LinkListDemo.csproj", "{261D17A3-DBF5-41D5-B904-59F2EFA673EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeeksForGeeks.TreeDemo", "GeeksForGeeks.TreeDemo\GeeksForGeeks.TreeDemo.csproj", "{125C491A-316F-469A-823B-710236981903}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeeksForGeeks.TreeDemo", "GeeksForGeeks.TreeDemo\GeeksForGeeks.TreeDemo.csproj", "{125C491A-316F-469A-823B-710236981903}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeeksForGeeks.BackTracking", "GeeksForGeeks.BackTracking\GeeksForGeeks.BackTracking.csproj", "{3FBC4C7C-4A2E-442E-95EE-45EB52BBF164}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{125C491A-316F-469A-823B-710236981903}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{125C491A-316F-469A-823B-710236981903}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{125C491A-316F-469A-823B-710236981903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FBC4C7C-4A2E-442E-95EE-45EB52BBF164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FBC4C7C-4A2E-442E-95EE-45EB52BBF164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FBC4C7C-4A2E-442E-95EE-45EB52BBF164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FBC4C7C-4A2E-442E-95EE-45EB52BBF164}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
