@@ -12,8 +12,32 @@ namespace GeeksForGeeks.ArrayDemo
             //MissingNumberDemo();
             //MaxOccuredDemo();
             //InsertAtEndDemo();
+
+            RemoveDuplicateDemo();
             Console.WriteLine("Press press <enter> to exit from console.");
             Console.ReadLine();
+        }
+
+        private void RemoveDuplicateDemo()
+        {
+            int[] arr = { 1, 1, 1, 3, 3, 5, 5 };
+            int n = arr.Length;
+
+            int[] arr2 = { 10, 20, 30, 40, 50 };
+            Console.WriteLine(rmDuplicates(arr2, arr2.Length));
+        }
+
+        int rmDuplicates(int[] arr, int n)
+        {
+            if (n == 0) return 0;
+
+            int start = 1;
+            for (int i = 1; i < n; i++)
+            {
+                if (arr[i] != arr[i - 1])
+                    start++;
+            }
+            return start;
         }
 
         private void MaxInCircularArrayDemoTesting()

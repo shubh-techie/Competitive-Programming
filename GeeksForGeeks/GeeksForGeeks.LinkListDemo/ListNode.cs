@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GeeksForGeeks.LinkListDemo
 {
@@ -93,7 +89,7 @@ namespace GeeksForGeeks.LinkListDemo
             if (head == null) return -1;
             if (head.Value == x) return 1;
             int position = 0;
-            while (head.Next!=null)
+            while (head.Next != null)
             {
                 if (head.Value == x)
                     return position;

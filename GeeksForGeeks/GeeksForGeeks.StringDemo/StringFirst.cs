@@ -374,16 +374,7 @@ namespace GeeksForGeeks.Search
         {
             StringBuilder sb = new StringBuilder("Hello World!");
             Console.WriteLine(sb);
-
-            string message1;
-            string message2 = null;
             string message3 = string.Empty;
-            string oldPath = "c:\\program files\\hello.exe";
-            string newPath = @"c:\progrm files\hello.exe";
-
-            String greeting = "Hello World!";
-            var temp = "I'm writing string";
-            const string message4 = "this is for testing";
             char[] arr = { 'A', 'B', 'C' };
             string alpha = new string(arr);
         }
