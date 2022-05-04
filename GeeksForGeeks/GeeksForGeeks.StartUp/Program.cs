@@ -1,5 +1,6 @@
 ﻿using GeeksForGeeks.ArrayDemo;
 using GeeksForGeeks.BackTracking;
+using GeeksForGeeks.BinarySerachTree;
 using GeeksForGeeks.TreeDemo;
 using System;
 
@@ -9,7 +10,8 @@ namespace GeeksForGeeks.StartUp
     {
         static void Main(string[] args)
         {
-            _ = new BackTrackingHelper();
+            _ = new BinarySerachTreeHelper();
+            //_ = new BackTrackingHelper();
             //_ = new LinkListHelper();
             //_ = new ArrayDemoHelper();
             // BitMagicHelper bitMagicHelper = new BitMagicHelper();
