@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace GeeksForGeeks.BinarySerachTree
 {
@@ -7,12 +8,46 @@ namespace GeeksForGeeks.BinarySerachTree
         public BinarySerachTreeHelper()
         {
             TreeNode root = GetBinarySearchTree();
+            verticalOrder(root);
+            //TraversalOfBst(root);
+            //InsertInBinarySerachTreeDemo(root);
+            //Console.WriteLine();
+            //Console.WriteLine("found key :" + SerachBSTDemo(root, 80));
+            //Console.WriteLine("found key :" + SerachBSTDemoIterative(root, 80));
+        }
 
-            TraversalOfBst(root);
-            InsertInBinarySerachTreeDemo(root);
-            Console.WriteLine();
-            Console.WriteLine("found key :" + SerachBSTDemo(root, 80));
-            Console.WriteLine("found key :" + SerachBSTDemoIterative(root, 80));
+        public List<int> verticalOrder(TreeNode root)
+        {
+            List<int> result = new List<int>();
+            Dictionary<int, List<int>> map = new Dictionary<int, List<int>>();
+            foreach (var item in map)
+            {
+                for (int i = 0; i < item.Value.Count; i++)
+                {
+                    result.Add(item.Value[i]);
+                }
+            }
+            return result;
+        }
+
+        public void Helper(TreeNode root, Dictionary<int, List<int>> map, int level)
+        {
+            if (root == null)
+                return;
+            else
+            {
+                if (map[level] == null)
+                {
+                    List<int> list = new List<int>();
+                    list.Add(root.Data);
+                    map.Add(level, list);
+
+                }
+                else
+                    map[level].Add(root.Data);
+            }
+            Helper(root.Left, map, level - 1);
+            Helper(root.Right, map, level + 1);
         }
 
         private void InsertInBinarySerachTreeDemo(TreeNode root)
