@@ -106,7 +106,7 @@ namespace GeeksForGeeks.GraphDemo
             }
         }
 
-        public bool isCycle(int V, List<List<int>> adj)
+        public bool isCycle(int V, List<List<int>> adj, char[][] grid)
         {
             bool[] visited = new bool[V];
 
@@ -266,6 +266,39 @@ namespace GeeksForGeeks.GraphDemo
             }
 
             return result; 
+        }
+
+        public int NumIslands(char[][] grid)
+        {
+            int result = 0;
+            if (grid == null || grid.Length ==0) return result;
+            int rows = grid.GetLength(0), cols = grid.GetLength(1);
+            bool[,] visited = new bool[rows,cols];
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < cols; j++)
+                {
+                    if (!visited[i, j])
+                    {
+                        Helper(grid, i, j, rows, cols, visited);
+                        result++;
+                    }
+                }
+            }
+
+            return result;
+        }
+
+        public void Helper(char[][] grid, int row, int col, int rows, int cols, bool[,] visited)
+        {
+            if (row < 0 || col < 0 || row >= rows || col >= cols || grid[row][col] == '0' || visited[row, col] == false) return;
+
+            visited[row, col] = true;
+            Helper(grid, row, col + 1, rows, cols, visited);
+            Helper(grid, row + 1, col, rows, cols, visited);
+            Helper(grid, row, col - 1, rows, cols, visited);
+            Helper(grid, row - 1, col, rows, cols, visited);
         }
     }
 }
