@@ -133,5 +133,63 @@ namespace LeetCode.TreeDemo
             CountUnivalSubtreesHelper(root.left, map);
             CountUnivalSubtreesHelper(root.right, map);
         }
+
+
+        int preIndex = 0;
+        public TreeNode BuildTree(int[] preorder, int[] inorder)
+        {
+            if (inorder.Length == 0 || preorder.Length == 0)
+                return null;
+            return CTree(preorder, inorder, 0, inorder.Length - 1);
+        }
+
+        private TreeNode CTree(int[] preorder, int[] inorder, int inStart, int inEnd)
+        {
+            if (preIndex > preorder.Length - 1 || inStart > inEnd) return null;
+
+            TreeNode root = new TreeNode(preorder[preIndex++]);
+
+            int inIndex = 0;
+            for (int i = inStart; i < inEnd; i++)
+            {
+                if (preorder[preIndex] == inorder[i])
+                {
+                    inIndex = i;
+                    break;
+                }
+            }
+
+            root.left = CTree(preorder, inorder, inStart, inIndex - 1);
+            root.right = CTree(preorder, inorder, inIndex + 1, inEnd);
+
+            return root;
+        }
+
+        public TreeNode BuildTreeDic(int[] preorder, int[] inorder)
+        {
+            if (inorder.Length == 0 || preorder.Length == 0)
+                return null;
+
+            Dictionary<int, int> inOrderMapping = new Dictionary<int, int>();
+            for (int i = 0; i < inorder.Length; i++)
+            {
+                inOrderMapping.Add(inorder[i], i);
+            }
+
+            return BuildHelper(preorder, inOrderMapping, 0, inorder.Length - 1, 0);
+        }
+
+        private TreeNode BuildHelper(int[] preorder, Dictionary<int, int> inOrderMapping, int leftPointer, int rightPoint, int startCounter)
+        {
+            if (leftPointer > rightPoint)
+                return null;
+
+            TreeNode root = new TreeNode(preorder[startCounter]);
+            int inIndex = inOrderMapping[root.val];
+
+            root.left = BuildHelper(preorder, inOrderMapping, leftPointer, inIndex - 1, startCounter + 1);
+            root.right = BuildHelper(preorder, inOrderMapping, inIndex + 1, rightPoint, startCounter + 1);
+            return root;
+        }
     }
 }

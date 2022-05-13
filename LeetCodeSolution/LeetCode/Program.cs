@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LeetCode.HeapDemo;
+using System;
 
 namespace LeetCode
 {
@@ -6,6 +7,7 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
+            _ = new HeapDemoHelper();
             Console.WriteLine("Hello World!");
         }
     }
